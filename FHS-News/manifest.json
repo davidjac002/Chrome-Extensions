@@ -1,0 +1,15 @@
+{
+  "name": "Dog God Replacer",
+  "version": "1.0.0",
+  "description": "Replaces all text with the Phrase Hello World",
+  "manifest_version": 3,
+  "author": "Jackson David",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["Word_Replace.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
